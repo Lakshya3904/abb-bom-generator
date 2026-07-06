@@ -685,6 +685,43 @@ def map_panels(panels):
 # - any `files.upload()`
 # - any `/content/...` paths (replace with local file names)
 
+# =========================
+# ✅ CSS
+# =========================
+css = """
+.gradio-container {
+    background-color: #0b0b0b;
+}
+
+/* LEFT LOGOS */
+.logo-container {
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+    padding:100px 60px;
+}
+
+/* LOGIN BOX */
+.login-card {
+    width: 350px;
+    margin-top: 120px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #1a1a1a;
+}
+
+/* TEXTBOX IMPROVEMENTS */
+.gr-textbox textarea {
+    overflow-y: auto !important;
+    font-size: 14px !important;
+    padding: 10px !important;
+}
+
+/* REMOVE EXTRA SPACE */
+.login-card .gr-markdown:empty {
+    display:none !important;
+}
+"""
 
 # =========================
 # ✅ UI
